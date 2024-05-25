@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استمارة طلب تأشيرة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 20px;
+            padding: 20px;
+            max-height: 297mm;
+            overflow: scroll;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        form {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .checkbox-group {
+            display: flex;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+        .checkbox-group input {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>روسيا</h1>
+<h2>استمارة طلب مبدئي</h2>
+
+<form>
+    <div class="form-group">
+        <label>الاسم كما هو في جواز السفر:</label>
+        <input type="text" name="family-name">
+    </div>
+    
+    <div class="form-group">
+        <label>الجنس:</label>
+        <div class="checkbox-group">
+            <label><input type="radio" name="gender" value="male"> مذكر</label>
+            <label><input type="radio" name="gender" value="female"> مؤنث</label>
+        </div>
+    </div>
+    <div class="form-group">
+        <label>تاريخ الميلاد (السنة/الشهر/اليوم):</label>
+        <input type="date" name="birthtext">
+    </div>
+    <div class="form-group">
+        <label>مكان الميلاد (المدينة، الولاية، الدولة):</label>
+        <input type="text" name="birthplace">
+    </div>
+    <div class="form-group">
+        <label>الجنسية الحالية (والأصلية إن وجدت):</label>
+        <input type="text" name="nationality">
+    </div>
+    <div class="form-group">
+        <label>نوع بطاقة الهوية أو الإقامة:</label>
+        <input type="text" name="id-type">
+    </div>
+    <div class="form-group">
+        <label>الرقم:</label>
+        <input type="text" name="id-number">
+    </div>
+    <div class="form-group">
+        <label>العنوان الشخصي:</label>
+        <input type="text" name="personal-address">
+    </div>
+    <div class="form-group">
+        <label>الهاتف الشخصي:</label>
+        <input type="tel" name="personal-phone">
+    </div>
+    <div class="form-group">
+        <label>عنوان بريد الكتروني:</label>
+        <input type="email" name="email">
+    </div>
+    <div class="form-group">
+        <label>هاتف جوال:</label>
+        <input type="tel" name="mobile-phone">
+    </div>
+    <div class="form-group">
+        <label>نوع ورقم جواز السفر:</label>
+        <input type="text" name="passport-type-number">
+    </div>
+    <div class="form-group">
+        <label>مكان وتاريخ إصدار الجواز:</label>
+        <input type="text" name="passport-issue">
+    </div>
+    <div class="form-group">
+        <label>تاريخ الانتهاء:</label>
+        <input type="date" name="passport-expiry">
+    </div>
+    <div class="form-group">
+        <label>الحالة الاجتماعية:</label>
+        <input type="text" name="marital-status">
+    </div>
+    <div class="form-group">
+        <label>المهنة:</label>
+        <input type="text" name="occupation">
+    </div>
+   
+    
+    </div>
+    
+</form>
+
+</body>
+</html>
